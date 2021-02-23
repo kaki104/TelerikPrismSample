@@ -1,0 +1,36 @@
+﻿<Window x:Class="TelerikPrismSample.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="http://prismlibrary.com/"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        Title="{Binding Title}" Height="350" Width="525"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" 
+        xmlns:local="clr-namespace:TelerikPrismSample">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <Button Content="ViewA" Margin="4" 
+                    Command="{Binding OpenCommand}" CommandParameter="ViewA"/>
+            <Button Content="ViewB" Margin="4"
+                    Command="{Binding OpenCommand}" CommandParameter="ViewB"/>
+        </StackPanel>
+        <telerik:RadDocking Grid.Row="1"
+                            prism:RegionManager.RegionName="ContentRegion"
+                            RetainPaneSizeMode="DockingAndFloating"
+                            CanAutoHideAreaExceedScreen="True"
+                            BorderThickness="0" Padding="0">
+            <telerik:RadDocking.DockingPanesFactory>
+                <local:ShellDockingPanesFactory/>
+            </telerik:RadDocking.DockingPanesFactory>
+            <telerik:RadDocking.DocumentHost>
+                <telerik:RadSplitContainer>
+                    <telerik:RadPaneGroup x:Name="hostGroup"
+                                          telerik:RadDocking.SerializationTag="hostGroup"/>
+                </telerik:RadSplitContainer>
+            </telerik:RadDocking.DocumentHost>            
+        </telerik:RadDocking>
+    </Grid>
+</Window>

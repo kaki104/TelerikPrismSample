@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="TelerikPrismSample.Views.ViewB"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"             
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <Grid>
+        <StackPanel VerticalAlignment="Center"
+                   HorizontalAlignment="Center">
+            <TextBlock Text="ViewB" FontSize="30" />
+            <TextBlock Text="IsActive" FontSize="30" />
+            <CheckBox IsChecked="{Binding IsActive}"/>
+        </StackPanel>
+
+    </Grid>
+</UserControl>

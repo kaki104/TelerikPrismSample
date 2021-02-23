@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelerikPrismSample", "TelerikPrismSample\TelerikPrismSample.csproj", "{A27CB796-1F4F-46AD-BACD-BC98C53F81FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A27CB796-1F4F-46AD-BACD-BC98C53F81FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A27CB796-1F4F-46AD-BACD-BC98C53F81FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A27CB796-1F4F-46AD-BACD-BC98C53F81FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A27CB796-1F4F-46AD-BACD-BC98C53F81FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8664FB08-9BD1-446D-904F-1BEE4375598D}
+	EndGlobalSection
+EndGlobal
